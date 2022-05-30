@@ -1,4 +1,13 @@
 .App {
+  margin: 0px;
+  background-color: black;
+  opacity: 1;
+  font: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+
+/*
+.App {
   text-align: center;
 }
 
@@ -36,3 +45,4 @@
     transform: rotate(360deg);
   }
 }
+*/
