@@ -1,15 +1,23 @@
 import "./App.css";
 import React from "react";
-import Row from "./Row";
-import Navbar from "./Navbar";
-import Backdrop from "./Backdrop";
+import Row from "./components/Row";
+import Navbar from "./components/Navbar";
+import Backdrop from "./components/Backdrop";
+import randomNumber from "./utils/functions";
 
 const App = () => {
+
+  const cat = ["TV", "MOVIES"];
+  const random_selection = cat[randomNumber(0, cat.length)];
+
   return (
     <>
       <div className="App">
         <Navbar />
-        <Backdrop fetchUrl={"DISCOVER"} sort={"ANY"} />
+        <Backdrop
+          fetchUrl={random_selection === "TV" ? "DISCOVER_TV" : "DISCOVER"}
+          sort={"ANY"}
+        />
         {/* <Row title="Nuevos Lanzamientos" fetchUrl={"LATEST_MOVIES"} />
         <Row title="Nuevas Series" fetchUrl={"LATEST_TV"} /> */}
         <Row title="Populares en Necflis" fetchUrl={"POPULAR_ALL"} />
