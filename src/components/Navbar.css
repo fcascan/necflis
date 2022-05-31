@@ -1,0 +1,60 @@
+/* NavBar CSS */
+.Navbar{
+  background-color: black;
+  padding-top: 2vh;
+  padding-bottom: 2vh;  
+  min-width: 100vw;
+  height: 8vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.Navbar-left-section{  
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  align-items: center;   
+  padding-left: 2vw;
+}
+
+.hamburger-icon{
+  max-height: 5vh;
+  max-width: 5vw;
+}
+
+.Necflis-logo{    
+  padding-left: 1vw;
+  padding-right: 1vw;
+  max-height: 6vh;  
+}
+
+.Navbar-middle-section{
+  color: white;
+  font-size: large;
+  text-decoration: none;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  min-width: 60vw;
+  display: flex;
+  overflow: hidden;  
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+}
+
+.Navbar-right-section{
+  
+  padding-right: 2vw;
+  position: center;
+
+}
+
+.user-img{
+  border-radius: 2%;
+  max-height: 6vh;
+}

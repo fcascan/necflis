@@ -1,0 +1,121 @@
+/* Backdrop CSS */
+
+:root{
+  --transparent-black: rgba(0, 0, 0, 0.05);
+  --text-shadow: 1px 1px 0 var(--transparent-black),
+    -1px 1px 0 var(--transparent-black),
+    1px -1px 0 var(--transparent-black),
+    -1px -1px 0 var(--transparent-black),
+    0px 1px 0 var(--transparent-black),
+    0px -1px 0 var(--transparent-black),
+    -1px 0px 0 var(--transparent-black),
+    1px 0px 0 var(--transparent-black),
+    2px 2px 0 var(--transparent-black),
+    -2px 2px 0 var(--transparent-black),
+    2px -2px 0 var(--transparent-black),
+    -2px -2px 0 var(--transparent-black),
+    0px 2px 0 var(--transparent-black),
+    0px -2px 0 var(--transparent-black),
+    -2px 0px 0 var(--transparent-black),
+    2px 0px 0 var(--transparent-black),
+    1px 2px 0 var(--transparent-black),
+    -1px 2px 0 var(--transparent-black),
+    1px -2px 0 var(--transparent-black),
+    -1px -2px 0 var(--transparent-black),
+    2px 1px 0 var(--transparent-black),
+    -2px 1px 0 var(--transparent-black),
+    2px -1px 0 var(--transparent-black),
+    -2px -1px 0 var(--transparent-black)
+}
+
+.backdrop {
+  color: white;
+  text-shadow: var(--text-shadow);
+  object-fit: contain;
+  min-height: 100vh;
+  position: center center;
+  opacity: 0.7;
+}
+
+.backdrop_title {
+  font-size: x-large;
+  min-width: 40vw;
+  max-width: 60vw;
+  padding: 2%;
+}
+
+.backdrop_logo {
+  display: flex;
+  align-items: center;
+  padding: 2%;
+}
+
+.backdrop_description {
+  font-size: x-large;
+  min-width: 30vw;
+  max-width: 40vw;
+  position: bottom left;
+  padding: 2%;
+}
+
+.backdrop_bottom {
+  padding: 1%;
+  padding-bottom: 3%;
+  display: flex;  
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.backdrop_bottom_left {
+  display: flex;
+  justify-content: left;
+  flex-wrap: nowrap;
+  min-width: 40vw;
+}
+
+.backdrop_bottom_right {
+  display: flex;
+  position: right;
+  justify-content: right;
+  flex-wrap: nowrap;
+  min-width: 40vw;
+}
+
+.backdrop_buttons {
+  font-size: x-large;
+  color: white;
+  text-shadow: var(--text-shadow);
+  padding: 2%;
+  margin: 1%;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-color: rgba(0, 0, 0, 0.05);
+  border-radius: 5%;
+}
+
+.backdrop_buttons:hover {
+  transform: scale(1.03);
+}
+
+.backdrop_small_button {
+  font-size: x-large;
+  color: white;
+  min-width: 5vw;
+  margin-right: 5%;
+  text-shadow: var(--text-shadow);
+  background-color: rgba(0, 0, 0, 0.3);
+  border-color: rgba(255, 255, 255, 0.75);
+  border-radius: 50%;
+  border-width: 1%;
+}
+
+.backdrop_small_button:hover {
+  transform: scale(1.03);
+}
+
+.backdrop_age_rating{
+  font-size: xx-large;
+  color: white;
+  position: center;
+  padding-right: 30%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
