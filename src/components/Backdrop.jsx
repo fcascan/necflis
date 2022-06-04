@@ -30,19 +30,6 @@ const Backdrop = ({ fetchUrl, sort }) => {
           });
   }, [fetchUrl, sort]);
 
-  // useEffect(() => {
-  //   //Este efecto se ejecuta cada vez que el contenido levantado por componente cambia
-  //   //de manera tal de obtener la edad recomendada del nuevo contenido
-  //   fetchUrl === "DISCOVER_TV"
-  //     ? services.getContentRating(content?.id).then((request) => {
-  //         setAgeRating(request.data.results.rating);
-  //       })
-  //     : services.getCertification(content?.id).then((request) => {
-  //         setAgeRating(request.data.results.release_dates.certification);
-  //         console.log(request.data);
-  //       });
-  // }, [content]);
-
   // console.table(content);
   // console.log(ageRating);
 
@@ -99,6 +86,7 @@ const Backdrop = ({ fetchUrl, sort }) => {
             }${ageRating}`}</span>
           </div>
         </div>
+        <div className="fade_effect"></div>
       </header>
     </>
   );
